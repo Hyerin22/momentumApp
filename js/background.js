@@ -15,5 +15,10 @@ const bgImage = document.createElement("img");
 // set src as a random image
 bgImage.src = `img/${chosenImage}`;
 
-// add image inside of body
-document.body.appendChild(bgImage);
+const imgCont = document.createElement("div");
+
+imgCont.classList.add("imgCont");
+
+
+imgCont.appendChild(bgImage);
+document.body.prepend(imgCont);
