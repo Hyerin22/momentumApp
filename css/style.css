@@ -1,7 +1,14 @@
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 
+#clock {
+  font-size: 500%;
+  margin: 0;
+}
 
 .hidden {
   display: none;
@@ -30,9 +37,80 @@ img {
 .center{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  height: 600px;
+  /* height: 600px; */
+  /* position: relative; */
+  /* top: 0; */
+  /* left: 0; */
+  /* transform: translate(-50%, 50%); */
+  /* transform: translateY(50%); */
+}
+
+#login-form {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#login-form > input:first-child {
+  width: 220px;
+  color: #fff;
+  font-size: 20px;
+  border-width: 0 0 2px;
+  border-color: #fff;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+#login-form > input:first-child:focus::placeholder {
+  color: transparent;
+}
+
+#login-form > input:first-child::placeholder {
+  color: #fff;
+  font-size: 20px;
+}
+/* #login-form > input:last-child {
+  background-color: #fff;
+  color: #000 !important;
+  border: 2px solid #fff;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 60%;
+  padding: 5px 25px 5px 25px;
+  color: #fff;
+} */
+
+#todo-form > input {
+  width: 180px;
+  color: #fff;
+  font-size: 16px;
+  border-width: 0 0 2px;
+  border-color: #fff;
+  margin-bottom: 5px;
+  background-color: transparent;
+  padding: 3px;
+  text-align: center;
+}
+
+
+#todo-form > input:focus::placeholder {
+  color: transparent;
+}
+
+#todo-form > input::placeholder {
+  color: #fff;
+  font-size: 16px;
 }
 
 
@@ -41,9 +119,10 @@ img {
 }
 
 h1, h2, span{
-  color: white;
+  color: #fff;
 }
 
 h1 {
   font-size: 50px;
 }
+
