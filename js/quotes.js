@@ -464,5 +464,5 @@ const author = document.querySelector("#quote span:last-child");
 // random quote within the length of the quotes array
 const randomTodaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = randomTodaysQuote.quote;
+quote.innerText = `"${randomTodaysQuote.quote}"`;
 author.innerText = randomTodaysQuote.author;
