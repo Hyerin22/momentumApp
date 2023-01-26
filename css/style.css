@@ -48,15 +48,8 @@ img {
   /* transform: translateY(50%); */
 }
 
-#login-form {
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
 
-#login-form > input:first-child {
+#login-form > input{
   width: 220px;
   color: #fff;
   font-size: 25px;
@@ -138,6 +131,7 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 70%;
 }
 
 #quote > span {
@@ -155,11 +149,13 @@ button {
 }
 
 
-h1, h2, span{
+h1, h2, span {
   color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1 {
   font-size: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 

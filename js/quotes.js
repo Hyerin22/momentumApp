@@ -26,11 +26,6 @@ const quotes = [
   },
   {
     quote:
-      "I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.",
-    author: "Michael Jordan",
-  },
-  {
-    quote:
       "The most difficult thing is the decision to act, the rest is merely tenacity.",
     author: "Amelia Earhart",
   },
@@ -465,4 +460,4 @@ const author = document.querySelector("#quote span:last-child");
 const randomTodaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = `"${randomTodaysQuote.quote}"`;
-author.innerText = randomTodaysQuote.author;
+author.innerText = `- ${randomTodaysQuote.author} -`;
